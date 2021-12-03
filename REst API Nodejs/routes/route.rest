@@ -1,0 +1,26 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/61aa01b2d3b698c243892265
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "kantush",
+    "subscribeToChannel": "Kantech Production"
+}
+
+###
+DELETE GET http://localhost:3000/subscribers/61aa01b2d3b698c243892265
+
+###
+PATCH  GET http://localhost:3000/subscribers/61aa01b2d3b698c243892265
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
